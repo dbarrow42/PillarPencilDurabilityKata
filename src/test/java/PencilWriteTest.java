@@ -43,4 +43,11 @@ public class PencilWriteTest {
         assertEquals(18, pencil.getDurability());
     }
 
+    @Test
+    public void PencilDurabilityTryToWriteCapitalLetterWithOnlyOneDurabilityRemaining() {
+        paper = pencil.write(paper, "The quick brown fox jumps over the Lazy dog.");
+        assertEquals("The quick brown fox jumps over the ~        ", paper);
+        assertEquals(0, pencil.getDurability());
+    }
+
 }

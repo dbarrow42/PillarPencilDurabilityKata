@@ -1,0 +1,2 @@
+3/3/19
+ - In the Pencil write function, many branching conditionals to handle the lower/uppercase situations. Should look to refactor to simplify
