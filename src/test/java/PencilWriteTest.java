@@ -70,4 +70,10 @@ public class PencilWriteTest {
         assertEquals(1, pencil.getLength());
     }
 
+    @Test
+    public void SharpeningAnAlreadySharpPencilDoesNotReduceLength() {
+        pencil.sharpen();
+        assertEquals(2, pencil.getLength());
+    }
+
 }

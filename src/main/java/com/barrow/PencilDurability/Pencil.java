@@ -46,6 +46,8 @@ public class Pencil {
 
     public void sharpen() {
         this.durability = this.initialDurability;
-        this.length--;
+        if (this.durability < this.initialDurability) {
+            this.length--;
+        }
     }
 }
