@@ -12,7 +12,7 @@ public class PencilWriteTest {
     @BeforeEach
     public void setup() {
         paper = "";
-        pencil = new Pencil(30);
+        pencil = new Pencil(30, 2);
     }
 
     @Test
@@ -61,6 +61,13 @@ public class PencilWriteTest {
         paper = pencil.write(paper, "text");
         pencil.sharpen();
         assertEquals(30, pencil.getDurability());
+    }
+
+    @Test
+    public void SharpeningPencilShortensItsOverallLength() {
+        paper = pencil.write(paper, "text");
+        pencil.sharpen();
+        assertEquals(1, pencil.getLength());
     }
 
 }

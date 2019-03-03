@@ -8,14 +8,20 @@ public class Pencil {
 
     private int durability;
     private int initialDurability;
+    private int length;
 
-    public Pencil(int durability) {
+    public Pencil(int durability, int length) {
         this.durability = durability;
         this.initialDurability = durability;
+        this.length = length;
     }
 
     public int getDurability() {
         return this.durability;
+    }
+
+    public int getLength() {
+        return this.length;
     }
 
     public String write(String paper, String textToWrite) {
@@ -40,5 +46,6 @@ public class Pencil {
 
     public void sharpen() {
         this.durability = this.initialDurability;
+        this.length--;
     }
 }
