@@ -76,4 +76,12 @@ public class PencilWriteTest {
         assertEquals(2, pencil.getLength());
     }
 
+    @Test
+    public void CannotSharpenWhenLengthIsZero() {
+        pencil = new Pencil(30, 0);
+        pencil.write(paper, "testing");
+        pencil.sharpen();
+        assertEquals(23, pencil.getDurability());
+        assertEquals(0, pencil.getLength());
+    }
 }
