@@ -50,4 +50,10 @@ public class PencilWriteTest {
         assertEquals(0, pencil.getDurability());
     }
 
+    @Test
+    public void PencilWriteNewLineCharactersDoesNotRemoveDurability() {
+        paper = pencil.write(paper, "The quick brown fox jumps\n over the lazy dog.");
+        assertEquals(0, pencil.getDurability());
+    }
+
 }
