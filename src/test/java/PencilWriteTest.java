@@ -56,4 +56,11 @@ public class PencilWriteTest {
         assertEquals(0, pencil.getDurability());
     }
 
+    @Test
+    public void SharpeningPencilCausesItToRegainInitialDurability() {
+        paper = pencil.write(paper, "text");
+        pencil.sharpen();
+        assertEquals(30, pencil.getDurability());
+    }
+
 }

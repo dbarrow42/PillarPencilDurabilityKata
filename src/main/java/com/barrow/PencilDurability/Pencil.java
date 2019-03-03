@@ -2,20 +2,22 @@ package com.barrow.PencilDurability;
 
 public class Pencil {
 
-    private int durability;
     private final int LOWERCASE_DEGRADATION_VALUE = 1;
     private final int UPPERCASE_DEGRADATION_VALUE = 2;
     private final char PARTIAL_UPPDERCASE_INDICATOR = '~';
 
+    private int durability;
+    private int initialDurability;
+
     public Pencil(int durability) {
         this.durability = durability;
+        this.initialDurability = durability;
     }
 
     public int getDurability() {
         return this.durability;
     }
 
-    // TODO Too many conditionals/branching
     public String write(String paper, String textToWrite) {
         StringBuilder tempString = new StringBuilder(paper);
         for (int i = 0; i < textToWrite.length(); i++) {
@@ -34,5 +36,9 @@ public class Pencil {
             }
         }
         return tempString.toString();
+    }
+
+    public void sharpen() {
+        this.durability = this.initialDurability;
     }
 }
