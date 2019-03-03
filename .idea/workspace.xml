@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
+            <state relative-caret-position="418">
+              <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+            <state relative-caret-position="384">
+              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
               <folding>
                 <element signature="e#310#311#0" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
@@ -163,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilWriteTest.EraseTextFromPaper">
+  <component name="RunManager" selected="JUnit.PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing">
     <configuration name="PencilWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -193,6 +192,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilDurabilityKata" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
+      <option name="METHOD_NAME" value="ErasingTextThatDoesNotExistFromPaperDoesNothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PencilWriteTest.PencilWritingNonLetterCharactersAreTreatedAsUppercase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -203,23 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PencilWriteTest.SharpeningPencilShortensItsOverallLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilDurabilityKata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
-      <option name="METHOD_NAME" value="SharpeningPencilShortensItsOverallLength" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PencilWriteTest.EraseTextFromPaper" />
+        <item itemvalue="JUnit.PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" />
         <item itemvalue="JUnit.PencilWriteTest" />
+        <item itemvalue="JUnit.PencilWriteTest.EraseTextFromPaper" />
         <item itemvalue="JUnit.PencilWriteTest.PencilWritingNonLetterCharactersAreTreatedAsUppercase" />
         <item itemvalue="JUnit.PencilWriteTest.CannotSharpenWhenLengthIsZero" />
-        <item itemvalue="JUnit.PencilWriteTest.SharpeningPencilShortensItsOverallLength" />
       </list>
     </recent_temporary>
   </component>
@@ -234,15 +233,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest_CannotSharpenWhenLengthIsZero - 2019.03.03 at 12h 59m 45s.xml">
-      <configuration name="PencilWriteTest.CannotSharpenWhenLengthIsZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_CannotSharpenWhenLengthIsZero - 2019.03.03 at 13h 02m 01s.xml">
-      <configuration name="PencilWriteTest.CannotSharpenWhenLengthIsZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_CannotSharpenWhenLengthIsZero - 2019.03.03 at 13h 03m 01s.xml">
-      <configuration name="PencilWriteTest.CannotSharpenWhenLengthIsZero" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest_CannotSharpenWhenLengthIsZero - 2019.03.03 at 13h 03m 18s.xml">
       <configuration name="PencilWriteTest.CannotSharpenWhenLengthIsZero" configurationId="JUnit" />
     </history-entry>
@@ -263,6 +253,15 @@
     </history-entry>
     <history-entry file="PencilWriteTest_EraseTextFromPaper - 2019.03.03 at 13h 24m 40s.xml">
       <configuration name="PencilWriteTest.EraseTextFromPaper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.03 at 13h 27m 41s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_ErasingTextThatDoesNotExistFromPaperDoesNothing - 2019.03.03 at 13h 30m 48s.xml">
+      <configuration name="PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_ErasingTextThatDoesNotExistFromPaperDoesNothing - 2019.03.03 at 13h 31m 01s.xml">
+      <configuration name="PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -315,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
+        <state relative-caret-position="418">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -325,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="384">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
           <folding>
             <element signature="e#310#311#0" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />

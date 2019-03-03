@@ -97,4 +97,13 @@ public class PencilWriteTest {
         paper = pencil.erase(paper, "brown");
         assertEquals("The quick       fox", paper);
     }
+
+    @Test
+    public void ErasingTextThatDoesNotExistFromPaperDoesNothing() {
+        paper = "The quick brown fox";
+        paper = pencil.erase(paper, "chipmunk");
+        assertEquals("The quick brown fox", paper);
+    }
+
+    
 }

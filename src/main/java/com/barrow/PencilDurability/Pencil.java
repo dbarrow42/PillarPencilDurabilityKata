@@ -52,7 +52,6 @@ public class Pencil {
     }
 
     public String erase(String paper, String textToErase) {
-        int location  = paper.lastIndexOf(textToErase);
         StringBuilder whitespace = new StringBuilder();
         for(int i = 0; i < textToErase.length(); i++) {
             whitespace.append(" ");
