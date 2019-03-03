@@ -90,4 +90,11 @@ public class PencilWriteTest {
         pencil.write(paper, "123@!#.,;'");
         assertEquals(10, pencil.getDurability());
     }
+
+    @Test
+    public void EraseTextFromPaper() {
+        paper = "The quick brown fox";
+        paper = pencil.erase(paper, "brown");
+        assertEquals("The quick       fox", paper);
+    }
 }
