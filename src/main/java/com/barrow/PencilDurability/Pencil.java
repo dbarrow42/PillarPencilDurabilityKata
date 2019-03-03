@@ -18,24 +18,19 @@ public class Pencil {
     // TODO Too many conditionals/branching
     public String write(String paper, String textToWrite) {
         StringBuilder tempString = new StringBuilder(paper);
-        for(int i = 0; i < textToWrite.length(); i++) {
+        for (int i = 0; i < textToWrite.length(); i++) {
             char nextChar = textToWrite.charAt(i);
-            if(this.durability == 0 || Character.isWhitespace(nextChar)) {
+            if (this.durability == 0 || Character.isWhitespace(nextChar)) { // Write whitespace
                 tempString.append(" ");
-            }
-            else if(Character.isLowerCase(nextChar)){
+            } else if (Character.isLowerCase(nextChar)) { // Write lowercase
                 tempString.append(nextChar);
                 this.durability -= this.LOWERCASE_DEGRADATION_VALUE;
-            }
-            else {
-                if(this.durability - this.UPPERCASE_DEGRADATION_VALUE > 0) {
-                    tempString.append(nextChar);
-                    this.durability -= this.UPPERCASE_DEGRADATION_VALUE;
-                }
-                else {
-                    tempString.append(this.PARTIAL_UPPDERCASE_INDICATOR);
-                    this.durability = 0;
-                }
+            } else if (this.durability - this.UPPERCASE_DEGRADATION_VALUE > 0) { // Write uppercase
+                tempString.append(nextChar);
+                this.durability -= this.UPPERCASE_DEGRADATION_VALUE;
+            } else { // Write 'partial' uppercase character (ran out of durability before finishing character
+                tempString.append(this.PARTIAL_UPPDERCASE_INDICATOR);
+                this.durability = 0;
             }
         }
         return tempString.toString();
