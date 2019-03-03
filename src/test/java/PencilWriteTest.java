@@ -31,7 +31,7 @@ public class PencilWriteTest {
     @Test
     public void PencilWritesOnlyUpToAsManyCharactersAsItsDurability() {
         paper = pencil.write(paper, "The quick brown fox jumps over the lazy dog.");
-        assertEquals("The quick brown fox jumps over the la       ", paper);
+        assertEquals("The quick brown fox jumps over the l        ", paper);
         assertEquals(0, pencil.getDurability());
     }
 

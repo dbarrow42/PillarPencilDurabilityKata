@@ -4,7 +4,7 @@ public class Pencil {
 
     private int durability;
     private final int LOWERCASE_DEGRADTION_VALUE = 1;
-    private final int UPPERCASE_DEGRADTION_VALUE = 1;
+    private final int UPPERCASE_DEGRADTION_VALUE = 2;
 
     public Pencil(int durability) {
         this.durability = durability;
@@ -20,7 +20,7 @@ public class Pencil {
             char nextChar = textToWrite.charAt(i);
             if(this.durability > 0 && !Character.isWhitespace(nextChar)) {
                 tempString.append(nextChar);
-                this.durability--;
+                this.durability -= Character.isUpperCase(nextChar) ? this.UPPERCASE_DEGRADTION_VALUE : this.LOWERCASE_DEGRADTION_VALUE;
             }
             else {
                 tempString.append(" ");
