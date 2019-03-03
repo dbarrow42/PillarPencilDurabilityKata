@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PencilWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PencilWriteTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="442">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,7 +152,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilWriteTest.PencilWriteToPaperWithExistingContents">
+  <component name="RunManager" selected="JUnit.PencilWriteTest">
+    <configuration name="PencilWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilDurabilityKata" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PencilWriteTest.PencilWriteToEmptyPaper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -173,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PencilWriteTest" />
         <item itemvalue="JUnit.PencilWriteTest.PencilWriteToPaperWithExistingContents" />
         <item itemvalue="JUnit.PencilWriteTest.PencilWriteToEmptyPaper" />
       </list>
@@ -197,6 +209,12 @@
     </history-entry>
     <history-entry file="PencilWriteTest_PencilWriteToPaperWithExistingContents - 2019.03.03 at 11h 31m 22s.xml">
       <configuration name="PencilWriteTest.PencilWriteToPaperWithExistingContents" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_PencilWriteToPaperWithExistingContents - 2019.03.03 at 11h 31m 34s.xml">
+      <configuration name="PencilWriteTest.PencilWriteToPaperWithExistingContents" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.03 at 11h 33m 28s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -246,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="442">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
