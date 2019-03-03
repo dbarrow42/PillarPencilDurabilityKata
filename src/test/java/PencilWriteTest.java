@@ -84,4 +84,10 @@ public class PencilWriteTest {
         assertEquals(23, pencil.getDurability());
         assertEquals(0, pencil.getLength());
     }
+
+    @Test
+    public void PencilWritingNonLetterCharactersAreTreatedAsUppercase() {
+        pencil.write(paper, "123@!#.,;'");
+        assertEquals(10, pencil.getDurability());
+    }
 }
