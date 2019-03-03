@@ -13,4 +13,12 @@ public class PencilWriteTest {
         assertEquals("Pencils are used for writing", paper);
     }
 
+    @Test
+    public void PencilWriteToPaperWithExistingContents() {
+        String paper = "Pencils are: ";
+        Pencil pencil = new Pencil();
+        paper = pencil.write(paper, "used for writing");
+        assertEquals("Pencils are: used for writing", paper);
+    }
+
 }
