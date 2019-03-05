@@ -178,4 +178,12 @@ public class PencilWriteTest {
         assertEquals(21, pencil.getPencilDurability());
         assertEquals("An artich@k@ay keeps the doctor away", paper);
     }
+    @Test
+    public void EditsOnlyMadeWhenPencilHasRemainingDurability() {
+        pencil = new Pencil(3, 1 , 3);
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "apple");
+        assertEquals(0, pencil.getPencilDurability());
+        assertEquals("An app   a day keeps the doctor away", paper);
+    }
 }

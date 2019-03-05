@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DevNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DevNotes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
+            <state relative-caret-position="350">
+              <caret line="182" column="38" lean-forward="true" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DevNotes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="137" selection-start-line="9" selection-start-column="137" selection-end-line="9" selection-end-column="137" />
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,9 +69,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/DevNotes.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
         <option value="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" />
+        <option value="$PROJECT_DIR$/DevNotes.txt" />
       </list>
     </option>
   </component>
@@ -164,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilWriteTest.EditingOverTextWithMultipleCollisions">
+  <component name="RunManager" selected="JUnit.PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability">
     <configuration name="PencilWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -204,11 +205,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PencilWriteTest.EditingOverTextWithoutCollision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
-      <option name="METHOD_NAME" value="EditingOverTextWithoutCollision" />
+      <option name="METHOD_NAME" value="EditsOnlyMadeWhenPencilHasRemainingDurability" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability" />
         <item itemvalue="JUnit.PencilWriteTest.EditingOverTextWithMultipleCollisions" />
         <item itemvalue="JUnit.PencilWriteTest" />
         <item itemvalue="JUnit.PencilWriteTest.EditingOverTextWithCollision" />
         <item itemvalue="JUnit.PencilWriteTest.EditTextWithoutOverwritingAnything" />
-        <item itemvalue="JUnit.PencilWriteTest.EditingOverTextWithoutCollision" />
       </list>
     </recent_temporary>
   </component>
@@ -235,15 +236,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest_EditingOverTextWithCollision - 2019.03.04 at 22h 39m 05s.xml">
-      <configuration name="PencilWriteTest.EditingOverTextWithCollision" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EditingOverTextWithCollision - 2019.03.04 at 22h 39m 11s.xml">
-      <configuration name="PencilWriteTest.EditingOverTextWithCollision" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EditingOverTextWithCollision - 2019.03.04 at 22h 40m 32s.xml">
-      <configuration name="PencilWriteTest.EditingOverTextWithCollision" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest_EditingOverTextWithCollision - 2019.03.04 at 22h 41m 28s.xml">
       <configuration name="PencilWriteTest.EditingOverTextWithCollision" configurationId="JUnit" />
     </history-entry>
@@ -265,18 +257,27 @@
     <history-entry file="PencilWriteTest_EditingOverTextWithMultipleCollisions - 2019.03.04 at 22h 53m 23s.xml">
       <configuration name="PencilWriteTest.EditingOverTextWithMultipleCollisions" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PencilWriteTest_EditingOverTextWithMultipleCollisions - 2019.03.04 at 22h 54m 21s.xml">
+      <configuration name="PencilWriteTest.EditingOverTextWithMultipleCollisions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_EditsOnlyMadeWhenPencilHasRemainingDurability - 2019.03.04 at 22h 59m 05s.xml">
+      <configuration name="PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_EditsOnlyMadeWhenPencilHasRemainingDurability - 2019.03.04 at 22h 59m 19s.xml">
+      <configuration name="PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DevNotes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="137" selection-start-line="9" selection-start-column="137" selection-end-line="9" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -331,11 +325,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
+        <state relative-caret-position="350">
+          <caret line="182" column="38" lean-forward="true" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DevNotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
