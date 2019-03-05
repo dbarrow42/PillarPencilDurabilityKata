@@ -178,6 +178,7 @@ public class PencilWriteTest {
         assertEquals(21, pencil.getPencilDurability());
         assertEquals("An artich@k@ay keeps the doctor away", paper);
     }
+
     @Test
     public void EditsOnlyMadeWhenPencilHasRemainingDurability() {
         pencil = new Pencil(3, 1 , 3);
@@ -186,4 +187,14 @@ public class PencilWriteTest {
         assertEquals(0, pencil.getPencilDurability());
         assertEquals("An app   a day keeps the doctor away", paper);
     }
+
+    @Test
+    public void EditsWithUppercaseUseMoreDurability() {
+        pencil = new Pencil(3, 1 , 3);
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "apPle");
+        assertEquals(0, pencil.getPencilDurability());
+        assertEquals("An ap~   a day keeps the doctor away", paper);
+    }
+
 }

@@ -87,6 +87,10 @@ public class Pencil {
                     sb.setCharAt(position, '@');
                     this.durability--;
                 } else {
+                    if(!Character.isLowerCase(currentCharToBeWritten) && this.durability - this.UPPERCASE_DEGRADATION_VALUE < 0) {
+                        currentCharToBeWritten = this.PARTIAL_UPPERCASE_INDICATOR;
+                        this.durability = 1;
+                    }
                     sb.setCharAt(position, currentCharToBeWritten);
                     this.durability--;
                 }
