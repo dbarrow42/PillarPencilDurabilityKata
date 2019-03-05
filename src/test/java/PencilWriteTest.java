@@ -170,4 +170,12 @@ public class PencilWriteTest {
         assertEquals(24, pencil.getPencilDurability());
         assertEquals("An onion @ day keeps the doctor away", paper);
     }
+
+    @Test
+    public void EditingOverTextWithMultipleCollisions() {
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "artichoke");
+        assertEquals(21, pencil.getPencilDurability());
+        assertEquals("An artich@k@ay keeps the doctor away", paper);
+    }
 }
