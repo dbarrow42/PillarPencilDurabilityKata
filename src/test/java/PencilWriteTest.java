@@ -155,4 +155,11 @@ public class PencilWriteTest {
         paper = pencil.edit(paper, 3 , "onion");
         assertEquals("An onion a day keeps the doctor away", paper);
     }
+
+    @Test
+    public void EditingTextReducesPencilDurability() {
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "onion");
+        assertEquals(25, pencil.getPencilDurability());
+    }
 }

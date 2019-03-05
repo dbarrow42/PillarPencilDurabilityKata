@@ -77,6 +77,7 @@ public class Pencil {
 
     public String edit(String paper, int startingLocation, String textToWrite) {
         StringBuilder sb = new StringBuilder(paper);
-        return new StringBuilder(paper.substring(0, startingLocation)).append(textToWrite).append(paper.substring(startingLocation + textToWrite.length())).toString();
+        String sub = write("", textToWrite);
+        return new StringBuilder(paper.substring(0, startingLocation)).append(sub).append(paper.substring(startingLocation + textToWrite.length())).toString();
     }
 }
