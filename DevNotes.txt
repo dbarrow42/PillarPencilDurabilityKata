@@ -3,3 +3,7 @@
  - Made an assumption that a pencil with max durability will not reduce its length upon sharpening
  - Made an assumption that any "symbol" (punctuation, brackets, parens, etc) should be considered uppercase.
     - Could have a HashMap or some form of definition for specific characters and their values but kept simple for this challenge
+
+3/4/19
+ - Eraser could probably be its own class. Each Pencil has an Eraser with a certain durability
+ - Pencil and Eraser both share the quality of having durability and being able to degrade, could implement a shared Interface

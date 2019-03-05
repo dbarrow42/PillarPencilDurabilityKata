@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DevNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DevNotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+              <caret line="155" column="68" lean-forward="true" selection-start-line="155" selection-start-column="68" selection-end-line="155" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+            <state relative-caret-position="503">
+              <caret line="79" column="153" selection-start-line="79" selection-start-column="153" selection-end-line="79" selection-end-column="153" />
               <folding>
                 <element signature="e#632#633#0" expanded="true" />
                 <element signature="e#677#678#0" expanded="true" />
@@ -46,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DevNotes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="129" selection-start-line="4" selection-start-column="129" selection-end-line="4" selection-end-column="129" />
+            <state relative-caret-position="136">
+              <caret line="8" column="126" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -69,8 +71,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/DevNotes.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
         <option value="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
       </list>
     </option>
   </component>
@@ -164,24 +166,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilWriteTest.EraserWithoutDurabilityCannotEraseAnyFurther">
-    <configuration name="PencilWriteTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilDurabilityKata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:PencilWriteTest]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PencilWriteTest.EditTextWithoutOverwritingAnything">
     <configuration name="PencilWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PencilWriteTest.EditTextWithoutOverwritingAnything" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilDurabilityKata" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
+      <option name="METHOD_NAME" value="EditTextWithoutOverwritingAnything" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PencilWriteTest.EraserWithoutDurabilityCannotEraseAnyFurther" />
+        <item itemvalue="JUnit.PencilWriteTest.EditTextWithoutOverwritingAnything" />
         <item itemvalue="JUnit.PencilWriteTest" />
+        <item itemvalue="JUnit.PencilWriteTest.EraserWithoutDurabilityCannotEraseAnyFurther" />
         <item itemvalue="JUnit.PencilWriteTest.ErasingWhitespaceDoesNotReduceEraserDurability" />
         <item itemvalue="JUnit.PencilWriteTest.ErasingTextCausesEraserToDegrade" />
-        <item itemvalue="JUnit.PencilWriteTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -237,15 +237,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest_ErasingTextCausesEraserToDegrade - 2019.03.04 at 19h 57m 37s.xml">
-      <configuration name="PencilWriteTest.ErasingTextCausesEraserToDegrade" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest - 2019.03.04 at 19h 57m 41s.xml">
-      <configuration name="PencilWriteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_ErasingWhitespaceDoesNotReduceEraserDurability - 2019.03.04 at 19h 59m 48s.xml">
-      <configuration name="PencilWriteTest.ErasingWhitespaceDoesNotReduceEraserDurability" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest_ErasingWhitespaceDoesNotReduceEraserDurability - 2019.03.04 at 20h 06m 50s.xml">
       <configuration name="PencilWriteTest.ErasingWhitespaceDoesNotReduceEraserDurability" configurationId="JUnit" />
     </history-entry>
@@ -266,6 +257,15 @@
     </history-entry>
     <history-entry file="PencilWriteTest_EraserWithoutDurabilityCannotEraseAnyFurther - 2019.03.04 at 20h 13m 39s.xml">
       <configuration name="PencilWriteTest.EraserWithoutDurabilityCannotEraseAnyFurther" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_EraserWithoutDurabilityCannotEraseAnyFurther - 2019.03.04 at 20h 13m 47s.xml">
+      <configuration name="PencilWriteTest.EraserWithoutDurabilityCannotEraseAnyFurther" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.04 at 20h 14m 15s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_EditTextWithoutOverwritingAnything - 2019.03.04 at 20h 31m 52s.xml">
+      <configuration name="PencilWriteTest.EditTextWithoutOverwritingAnything" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -311,15 +311,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DevNotes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="129" selection-start-line="4" selection-start-column="129" selection-end-line="4" selection-end-column="129" />
+        <state relative-caret-position="136">
+          <caret line="8" column="126" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="155" column="68" lean-forward="true" selection-start-line="155" selection-start-column="68" selection-end-line="155" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        <state relative-caret-position="503">
+          <caret line="79" column="153" selection-start-line="79" selection-start-column="153" selection-end-line="79" selection-end-column="153" />
           <folding>
             <element signature="e#632#633#0" expanded="true" />
             <element signature="e#677#678#0" expanded="true" />
@@ -327,16 +337,6 @@
             <element signature="e#765#766#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
             <element signature="e#620#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

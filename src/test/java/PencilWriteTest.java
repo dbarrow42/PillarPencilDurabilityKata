@@ -148,4 +148,11 @@ public class PencilWriteTest {
         assertEquals(0, pencil.getEraserDurability());
         assertEquals("woodchuck could ch   ", paper);
     }
+
+    @Test
+    public void EditTextWithoutOverwritingAnything() {
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "onion");
+        assertEquals("An onion a day keeps the doctor away", paper);
+    }
 }
