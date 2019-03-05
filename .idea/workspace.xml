@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+            <state relative-caret-position="197">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+            <state relative-caret-position="469">
+              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="e#586#587#0" expanded="true" />
                 <element signature="e#620#621#0" expanded="true" />
@@ -66,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/DevNotes.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
         <option value="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
       </list>
     </option>
   </component>
@@ -161,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilWriteTest.ErasingTextThatIsPartOfAWordDeletesThatPart">
+  <component name="RunManager" selected="JUnit.PencilWriteTest">
     <configuration name="PencilWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -171,21 +171,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PencilWriteTest.EraseTextFromPaper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilDurabilityKata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
-      <option name="METHOD_NAME" value="EraseTextFromPaper" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PencilWriteTest.ErasingTextContainingPartOfExistingTextDoesNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilDurabilityKata" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
       <option name="METHOD_NAME" value="ErasingTextContainingPartOfExistingTextDoesNothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PencilWriteTest.ErasingTextOnlyErasesLastOccurrence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilDurabilityKata" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PencilWriteTest" />
+      <option name="METHOD_NAME" value="ErasingTextOnlyErasesLastOccurrence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PencilWriteTest.ErasingTextThatIsPartOfAWordDeletesThatPart" />
         <item itemvalue="JUnit.PencilWriteTest" />
+        <item itemvalue="JUnit.PencilWriteTest.ErasingTextOnlyErasesLastOccurrence" />
+        <item itemvalue="JUnit.PencilWriteTest.ErasingTextThatIsPartOfAWordDeletesThatPart" />
         <item itemvalue="JUnit.PencilWriteTest.ErasingTextContainingPartOfExistingTextDoesNothing" />
         <item itemvalue="JUnit.PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" />
-        <item itemvalue="JUnit.PencilWriteTest.EraseTextFromPaper" />
       </list>
     </recent_temporary>
   </component>
@@ -232,18 +232,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest - 2019.03.03 at 13h 08m 39s.xml">
-      <configuration name="PencilWriteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EraseTextFromPaper - 2019.03.03 at 13h 24m 24s.xml">
-      <configuration name="PencilWriteTest.EraseTextFromPaper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EraseTextFromPaper - 2019.03.03 at 13h 24m 40s.xml">
-      <configuration name="PencilWriteTest.EraseTextFromPaper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest - 2019.03.03 at 13h 27m 41s.xml">
-      <configuration name="PencilWriteTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest_ErasingTextThatDoesNotExistFromPaperDoesNothing - 2019.03.03 at 13h 30m 48s.xml">
       <configuration name="PencilWriteTest.ErasingTextThatDoesNotExistFromPaperDoesNothing" configurationId="JUnit" />
     </history-entry>
@@ -261,6 +249,18 @@
     </history-entry>
     <history-entry file="PencilWriteTest_ErasingTextThatIsPartOfAWordDeletesThatPart - 2019.03.04 at 19h 38m 10s.xml">
       <configuration name="PencilWriteTest.ErasingTextThatIsPartOfAWordDeletesThatPart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_ErasingTextOnlyErasesLastOccurrence - 2019.03.04 at 19h 40m 32s.xml">
+      <configuration name="PencilWriteTest.ErasingTextOnlyErasesLastOccurrence" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_ErasingTextOnlyErasesLastOccurrence - 2019.03.04 at 19h 47m 24s.xml">
+      <configuration name="PencilWriteTest.ErasingTextOnlyErasesLastOccurrence" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_ErasingTextOnlyErasesLastOccurrence - 2019.03.04 at 19h 48m 03s.xml">
+      <configuration name="PencilWriteTest.ErasingTextOnlyErasesLastOccurrence" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.04 at 19h 48m 43s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -311,23 +311,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        <state relative-caret-position="197">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
           <folding>
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+        <state relative-caret-position="469">
+          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
           </folding>
         </state>
       </provider>

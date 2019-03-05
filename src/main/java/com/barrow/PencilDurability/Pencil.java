@@ -53,9 +53,14 @@ public class Pencil {
 
     public String erase(String paper, String textToErase) {
         StringBuilder whitespace = new StringBuilder();
-        for(int i = 0; i < textToErase.length(); i++) {
+        for (int i = 0; i < textToErase.length(); i++) {
             whitespace.append(" ");
         }
-        return paper.replace(textToErase, whitespace);
+        int location = paper.lastIndexOf(textToErase);
+        if(location != -1) {
+            StringBuilder sb = new StringBuilder(paper);
+            paper =  sb.replace(location, location + textToErase.length(), whitespace.toString()).toString();
+        }
+        return paper;
     }
 }

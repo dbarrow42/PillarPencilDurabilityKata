@@ -119,5 +119,11 @@ public class PencilWriteTest {
         assertEquals("wood     ", paper);
     }
 
+    @Test
+    public void ErasingTextOnlyErasesLastOccurrence() {
+        paper = "woodchuck could chuck";
+        paper = pencil.erase(paper, "chuck");
+        assertEquals("woodchuck could      ", paper);
 
+    }
 }
