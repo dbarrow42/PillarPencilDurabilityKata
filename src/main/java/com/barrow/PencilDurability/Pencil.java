@@ -42,7 +42,7 @@ public class Pencil {
             } else if (this.durability - this.UPPERCASE_DEGRADATION_VALUE > 0) { // Write uppercase
                 tempString.append(nextChar);
                 this.durability -= this.UPPERCASE_DEGRADATION_VALUE;
-            } else { // Write 'partial' uppercase character (ran out of durability before finishing character
+            } else { // Write 'partial' uppercase character (ran out of durability before finishing character)
                 tempString.append(this.PARTIAL_UPPERCASE_INDICATOR);
                 this.durability = 0;
             }
@@ -85,16 +85,18 @@ public class Pencil {
             if (currentPaperChar != currentCharToBeWritten) {
                 if (!Character.isWhitespace(currentPaperChar)) {
                     sb.setCharAt(position, '@');
-                    this.durability--;
-                } else {
-                    if(!Character.isLowerCase(currentCharToBeWritten) && this.durability - this.UPPERCASE_DEGRADATION_VALUE < 0) {
-                        currentCharToBeWritten = this.PARTIAL_UPPERCASE_INDICATOR;
-                        this.durability = 1;
+                    this.durability -= LOWERCASE_DEGRADATION_VALUE;
+                } else if (!Character.isLowerCase(currentCharToBeWritten)){
+                    if (this.durability - UPPERCASE_DEGRADATION_VALUE < 0) {
+                        currentCharToBeWritten = PARTIAL_UPPERCASE_INDICATOR;
+                        this.durability = UPPERCASE_DEGRADATION_VALUE; // durability will be zero after next two statements
                     }
                     sb.setCharAt(position, currentCharToBeWritten);
-                    this.durability--;
+                    this.durability -= UPPERCASE_DEGRADATION_VALUE;
+                } else {
+                    sb.setCharAt(position, currentCharToBeWritten);
+                    this.durability -= LOWERCASE_DEGRADATION_VALUE;
                 }
-
             }
             position++;
             textIndex++;

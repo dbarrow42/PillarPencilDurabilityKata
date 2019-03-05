@@ -190,6 +190,15 @@ public class PencilWriteTest {
 
     @Test
     public void EditsWithUppercaseUseMoreDurability() {
+        pencil = new Pencil(5, 1 , 3);
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "apPle");
+        assertEquals(0, pencil.getPencilDurability());
+        assertEquals("An apPl  a day keeps the doctor away", paper);
+    }
+
+    @Test
+    public void EditsWithUppercaseWhenInsufficientDurability() {
         pencil = new Pencil(3, 1 , 3);
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "apPle");
