@@ -112,5 +112,12 @@ public class PencilWriteTest {
         assertEquals("The quick brown fox", paper);
     }
 
+    @Test
+    public void ErasingTextThatIsPartOfAWordDeletesThatPart() {
+        paper = "woodchuck";
+        paper = pencil.erase(paper, "chuck");
+        assertEquals("wood     ", paper);
+    }
+
 
 }
