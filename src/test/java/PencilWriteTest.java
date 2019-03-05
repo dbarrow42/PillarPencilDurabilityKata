@@ -132,4 +132,11 @@ public class PencilWriteTest {
         paper = pencil.erase(paper, "chuck");
         assertEquals(25, pencil.getEraserDurability());
     }
+
+    @Test
+    public void ErasingWhitespaceDoesNotReduceEraserDurability() {
+        paper = "woodchuck could chuck";
+        paper = pencil.erase(paper, "could chuck");
+        assertEquals(20, pencil.getEraserDurability());
+    }
 }

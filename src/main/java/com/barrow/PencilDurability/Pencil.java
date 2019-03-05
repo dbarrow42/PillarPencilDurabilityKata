@@ -58,7 +58,7 @@ public class Pencil {
     }
 
     public String erase(String paper, String textToErase) {
-        StringBuilder whitespace = new StringBuilder();
+        /*StringBuilder whitespace = new StringBuilder();
         for (int i = 0; i < textToErase.length(); i++) {
             whitespace.append(" ");
         }
@@ -68,7 +68,22 @@ public class Pencil {
             paper = sb.replace(location, location + textToErase.length(), whitespace.toString()).toString();
             this.eraserDurability -= textToErase.length();
         }
+        return paper;*/
+        int location = paper.lastIndexOf(textToErase);
+        if(location > -1) {
+            int position = location + textToErase.length() - 1;
+            StringBuilder sb = new StringBuilder(paper);
+            while(this.eraserDurability > 0 && position >= location) {
+                if(!Character.isWhitespace(paper.charAt(position))) {
+                    sb.setCharAt(position, ' ');
+                    this.eraserDurability--;
+                }
+                position--;
+            }
+            paper = sb.toString();
+        }
         return paper;
+
     }
 
 }
