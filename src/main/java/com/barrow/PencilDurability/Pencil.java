@@ -4,20 +4,26 @@ public class Pencil {
 
     private final int LOWERCASE_DEGRADATION_VALUE = 1;
     private final int UPPERCASE_DEGRADATION_VALUE = 2;
-    private final char PARTIAL_UPPDERCASE_INDICATOR = '~';
+    private final char PARTIAL_UPPERCASE_INDICATOR = '~';
 
     private int durability;
     private int initialDurability;
     private int length;
+    private int eraserDurability;
 
-    public Pencil(int durability, int length) {
+    public Pencil(int durability, int length, int eraserDurability) {
         this.durability = durability;
         this.initialDurability = durability;
         this.length = length;
+        this.eraserDurability = eraserDurability;
     }
 
-    public int getDurability() {
+    public int getPencilDurability() {
         return this.durability;
+    }
+
+    public int getEraserDurability() {
+        return this.eraserDurability;
     }
 
     public int getLength() {
@@ -37,7 +43,7 @@ public class Pencil {
                 tempString.append(nextChar);
                 this.durability -= this.UPPERCASE_DEGRADATION_VALUE;
             } else { // Write 'partial' uppercase character (ran out of durability before finishing character
-                tempString.append(this.PARTIAL_UPPDERCASE_INDICATOR);
+                tempString.append(this.PARTIAL_UPPERCASE_INDICATOR);
                 this.durability = 0;
             }
         }
@@ -57,10 +63,12 @@ public class Pencil {
             whitespace.append(" ");
         }
         int location = paper.lastIndexOf(textToErase);
-        if(location != -1) {
+        if (location != -1) {
             StringBuilder sb = new StringBuilder(paper);
-            paper =  sb.replace(location, location + textToErase.length(), whitespace.toString()).toString();
+            paper = sb.replace(location, location + textToErase.length(), whitespace.toString()).toString();
+            this.eraserDurability -= textToErase.length();
         }
         return paper;
     }
+
 }

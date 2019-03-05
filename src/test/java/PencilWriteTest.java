@@ -12,7 +12,7 @@ public class PencilWriteTest {
     @BeforeEach
     public void setup() {
         paper = "";
-        pencil = new Pencil(30, 2);
+        pencil = new Pencil(30, 2, 30);
     }
 
     @Test
@@ -32,35 +32,35 @@ public class PencilWriteTest {
     public void PencilWritesOnlyUpToAsManyCharactersAsItsDurability() {
         paper = pencil.write(paper, "The quick brown fox jumps over the lazy dog.");
         assertEquals("The quick brown fox jumps over the l        ", paper);
-        assertEquals(0, pencil.getDurability());
+        assertEquals(0, pencil.getPencilDurability());
     }
 
     @Test
     public void PencilDurabilityDegradesQuickerWithCapitalLetters() {
         paper = pencil.write(paper, "text");
-        assertEquals(26, pencil.getDurability());
+        assertEquals(26, pencil.getPencilDurability());
         paper = pencil.write(paper, "TEXT");
-        assertEquals(18, pencil.getDurability());
+        assertEquals(18, pencil.getPencilDurability());
     }
 
     @Test
     public void PencilDurabilityTryToWriteCapitalLetterWithOnlyOneDurabilityRemaining() {
         paper = pencil.write(paper, "The quick brown fox jumps over the Lazy dog.");
         assertEquals("The quick brown fox jumps over the ~        ", paper);
-        assertEquals(0, pencil.getDurability());
+        assertEquals(0, pencil.getPencilDurability());
     }
 
     @Test
     public void PencilWriteNewLineCharactersDoesNotRemoveDurability() {
         paper = pencil.write(paper, "The quick brown fox jumps\n over the lazy dog.");
-        assertEquals(0, pencil.getDurability());
+        assertEquals(0, pencil.getPencilDurability());
     }
 
     @Test
     public void SharpeningPencilCausesItToRegainInitialDurability() {
         paper = pencil.write(paper, "text");
         pencil.sharpen();
-        assertEquals(30, pencil.getDurability());
+        assertEquals(30, pencil.getPencilDurability());
     }
 
     @Test
@@ -78,17 +78,17 @@ public class PencilWriteTest {
 
     @Test
     public void CannotSharpenWhenLengthIsZero() {
-        pencil = new Pencil(30, 0);
+        pencil = new Pencil(30, 0, 30);
         pencil.write(paper, "testing");
         pencil.sharpen();
-        assertEquals(23, pencil.getDurability());
+        assertEquals(23, pencil.getPencilDurability());
         assertEquals(0, pencil.getLength());
     }
 
     @Test
     public void PencilWritingNonLetterCharactersAreTreatedAsUppercase() {
         pencil.write(paper, "123@!#.,;'");
-        assertEquals(10, pencil.getDurability());
+        assertEquals(10, pencil.getPencilDurability());
     }
 
     @Test
@@ -124,6 +124,12 @@ public class PencilWriteTest {
         paper = "woodchuck could chuck";
         paper = pencil.erase(paper, "chuck");
         assertEquals("woodchuck could      ", paper);
+    }
 
+    @Test
+    public void ErasingTextCausesEraserToDegrade() {
+        paper = "woodchuck could chuck";
+        paper = pencil.erase(paper, "chuck");
+        assertEquals(25, pencil.getEraserDurability());
     }
 }
