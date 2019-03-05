@@ -139,4 +139,13 @@ public class PencilWriteTest {
         paper = pencil.erase(paper, "could chuck");
         assertEquals(20, pencil.getEraserDurability());
     }
+
+    @Test
+    public void EraserWithoutDurabilityCannotEraseAnyFurther() {
+        pencil = new Pencil(30, 2, 3);
+        paper = "woodchuck could chuck";
+        paper = pencil.erase(paper, "chuck");
+        assertEquals(0, pencil.getEraserDurability());
+        assertEquals("woodchuck could ch   ", paper);
+    }
 }
