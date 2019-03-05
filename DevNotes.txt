@@ -7,3 +7,4 @@
 3/4/19
  - Eraser could probably be its own class. Each Pencil has an Eraser with a certain durability
  - Pencil and Eraser both share the quality of having durability and being able to degrade, could implement a shared Interface
+ - When editing, made an assumption that "overwriting" a character with whitespace still counts as a conflict but does not degrade pencil

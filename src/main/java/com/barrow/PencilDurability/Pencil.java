@@ -59,11 +59,11 @@ public class Pencil {
 
     public String erase(String paper, String textToErase) {
         int location = paper.lastIndexOf(textToErase);
-        if(location > -1) {
+        if (location > -1) {
             int position = location + textToErase.length() - 1;
             StringBuilder sb = new StringBuilder(paper);
-            while(this.eraserDurability > 0 && position >= location) {
-                if(!Character.isWhitespace(paper.charAt(position))) {
+            while (this.eraserDurability > 0 && position >= location) {
+                if (!Character.isWhitespace(paper.charAt(position))) {
                     sb.setCharAt(position, ' ');
                     this.eraserDurability--;
                 }
@@ -77,7 +77,24 @@ public class Pencil {
 
     public String edit(String paper, int startingLocation, String textToWrite) {
         StringBuilder sb = new StringBuilder(paper);
-        String sub = write("", textToWrite);
-        return new StringBuilder(paper.substring(0, startingLocation)).append(sub).append(paper.substring(startingLocation + textToWrite.length())).toString();
+        int position = startingLocation;
+        int textIndex = 0;
+        while (this.durability > 0 && position < startingLocation + textToWrite.length()) {
+            char currentPaperChar = sb.charAt(position);
+            char currentCharToBeWritten = textToWrite.charAt(textIndex);
+            if (currentPaperChar != currentCharToBeWritten) {
+                if (!Character.isWhitespace(currentPaperChar)) {
+                    sb.setCharAt(position, '@');
+                    this.durability--;
+                } else {
+                    sb.setCharAt(position, currentCharToBeWritten);
+                    this.durability--;
+                }
+
+            }
+            position++;
+            textIndex++;
+        }
+        return sb.toString();
     }
 }

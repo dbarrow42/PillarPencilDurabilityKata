@@ -162,4 +162,12 @@ public class PencilWriteTest {
         paper = pencil.edit(paper, 3 , "onion");
         assertEquals(25, pencil.getPencilDurability());
     }
+
+    @Test
+    public void EditingOverTextWithCollision() {
+        paper = "An       a day keeps the doctor away";
+        paper = pencil.edit(paper, 3 , "onion b");
+        assertEquals(24, pencil.getPencilDurability());
+        assertEquals("An onion @ day keeps the doctor away", paper);
+    }
 }
