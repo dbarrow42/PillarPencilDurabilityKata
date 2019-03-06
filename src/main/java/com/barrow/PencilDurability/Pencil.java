@@ -5,6 +5,7 @@ public class Pencil implements IDurable {
     private final int LOWERCASE_DEGRADATION_VALUE = 1;
     private final int UPPERCASE_DEGRADATION_VALUE = 2;
     private final char PARTIAL_UPPERCASE_INDICATOR = '~';
+    private final char EDITING_COLLISION_CHAR = '@';
 
     private int durability;
     private int initialDurability;
@@ -39,17 +40,16 @@ public class Pencil implements IDurable {
         for (int i = 0; i < textToWrite.length(); i++) {
             char nextChar = textToWrite.charAt(i);
             if (this.durability == 0 || Character.isWhitespace(nextChar)) { // Write whitespace
-                tempString.append(" ");
+                nextChar = ' ';
             } else if (Character.isLowerCase(nextChar)) { // Write lowercase
-                tempString.append(nextChar);
                 this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
             } else if (this.durability - this.UPPERCASE_DEGRADATION_VALUE > 0) { // Write uppercase
-                tempString.append(nextChar);
                 this.reduceDurability(this.UPPERCASE_DEGRADATION_VALUE);
             } else { // Write 'partial' uppercase character (ran out of durability before finishing character)
-                tempString.append(this.PARTIAL_UPPERCASE_INDICATOR);
+                nextChar = this.PARTIAL_UPPERCASE_INDICATOR;
                 this.durability = 0;
             }
+            tempString.append(nextChar);
         }
         return tempString.toString();
     }
@@ -75,7 +75,7 @@ public class Pencil implements IDurable {
             char currentCharToBeWritten = textToWrite.charAt(textIndex);
             if (currentPaperChar != currentCharToBeWritten) {
                 if (!Character.isWhitespace(currentPaperChar)) {
-                    sb.setCharAt(position, '@');
+                    sb.setCharAt(position, this.EDITING_COLLISION_CHAR);
                     this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
                 } else if (!Character.isLowerCase(currentCharToBeWritten)){
                     if (this.durability - this.UPPERCASE_DEGRADATION_VALUE < 0) {
