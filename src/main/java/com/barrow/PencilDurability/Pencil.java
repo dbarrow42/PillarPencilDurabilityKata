@@ -1,6 +1,6 @@
 package com.barrow.PencilDurability;
 
-public class Pencil {
+public class Pencil implements IDurable {
 
     private final int LOWERCASE_DEGRADATION_VALUE = 1;
     private final int UPPERCASE_DEGRADATION_VALUE = 2;
@@ -18,8 +18,12 @@ public class Pencil {
         this.eraserDurability = eraserDurability;
     }
 
-    public int getPencilDurability() {
+    public int getDurability() {
         return this.durability;
+    }
+
+    public void reduceDurability(int amount) {
+        this.durability -= amount;
     }
 
     public int getEraserDurability() {
@@ -38,10 +42,10 @@ public class Pencil {
                 tempString.append(" ");
             } else if (Character.isLowerCase(nextChar)) { // Write lowercase
                 tempString.append(nextChar);
-                this.durability -= this.LOWERCASE_DEGRADATION_VALUE;
+                this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
             } else if (this.durability - this.UPPERCASE_DEGRADATION_VALUE > 0) { // Write uppercase
                 tempString.append(nextChar);
-                this.durability -= this.UPPERCASE_DEGRADATION_VALUE;
+                this.reduceDurability(this.UPPERCASE_DEGRADATION_VALUE);
             } else { // Write 'partial' uppercase character (ran out of durability before finishing character)
                 tempString.append(this.PARTIAL_UPPERCASE_INDICATOR);
                 this.durability = 0;
@@ -85,17 +89,17 @@ public class Pencil {
             if (currentPaperChar != currentCharToBeWritten) {
                 if (!Character.isWhitespace(currentPaperChar)) {
                     sb.setCharAt(position, '@');
-                    this.durability -= LOWERCASE_DEGRADATION_VALUE;
+                    this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
                 } else if (!Character.isLowerCase(currentCharToBeWritten)){
-                    if (this.durability - UPPERCASE_DEGRADATION_VALUE < 0) {
-                        currentCharToBeWritten = PARTIAL_UPPERCASE_INDICATOR;
-                        this.durability = UPPERCASE_DEGRADATION_VALUE; // durability will be zero after next two statements
+                    if (this.durability - this.UPPERCASE_DEGRADATION_VALUE < 0) {
+                        currentCharToBeWritten = this.PARTIAL_UPPERCASE_INDICATOR;
+                        this.durability = this.UPPERCASE_DEGRADATION_VALUE; // durability will be zero after next two statements
                     }
                     sb.setCharAt(position, currentCharToBeWritten);
-                    this.durability -= UPPERCASE_DEGRADATION_VALUE;
+                    this.reduceDurability(this.UPPERCASE_DEGRADATION_VALUE);
                 } else {
                     sb.setCharAt(position, currentCharToBeWritten);
-                    this.durability -= LOWERCASE_DEGRADATION_VALUE;
+                    this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
                 }
             }
             position++;

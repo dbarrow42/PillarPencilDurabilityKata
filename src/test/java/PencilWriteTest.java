@@ -32,35 +32,35 @@ public class PencilWriteTest {
     public void PencilWritesOnlyUpToAsManyCharactersAsItsDurability() {
         paper = pencil.write(paper, "The quick brown fox jumps over the lazy dog.");
         assertEquals("The quick brown fox jumps over the l        ", paper);
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
     }
 
     @Test
     public void PencilDurabilityDegradesQuickerWithCapitalLetters() {
         paper = pencil.write(paper, "text");
-        assertEquals(26, pencil.getPencilDurability());
+        assertEquals(26, pencil.getDurability());
         paper = pencil.write(paper, "TEXT");
-        assertEquals(18, pencil.getPencilDurability());
+        assertEquals(18, pencil.getDurability());
     }
 
     @Test
     public void PencilDurabilityTryToWriteCapitalLetterWithOnlyOneDurabilityRemaining() {
         paper = pencil.write(paper, "The quick brown fox jumps over the Lazy dog.");
         assertEquals("The quick brown fox jumps over the ~        ", paper);
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
     }
 
     @Test
     public void PencilWriteNewLineCharactersDoesNotRemoveDurability() {
         paper = pencil.write(paper, "The quick brown fox jumps\n over the lazy dog.");
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
     }
 
     @Test
     public void SharpeningPencilCausesItToRegainInitialDurability() {
         paper = pencil.write(paper, "text");
         pencil.sharpen();
-        assertEquals(30, pencil.getPencilDurability());
+        assertEquals(30, pencil.getDurability());
     }
 
     @Test
@@ -81,14 +81,14 @@ public class PencilWriteTest {
         pencil = new Pencil(30, 0, 30);
         pencil.write(paper, "testing");
         pencil.sharpen();
-        assertEquals(23, pencil.getPencilDurability());
+        assertEquals(23, pencil.getDurability());
         assertEquals(0, pencil.getLength());
     }
 
     @Test
     public void PencilWritingNonLetterCharactersAreTreatedAsUppercase() {
         pencil.write(paper, "123@!#.,;'");
-        assertEquals(10, pencil.getPencilDurability());
+        assertEquals(10, pencil.getDurability());
     }
 
     @Test
@@ -160,14 +160,14 @@ public class PencilWriteTest {
     public void EditingTextReducesPencilDurability() {
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "onion");
-        assertEquals(25, pencil.getPencilDurability());
+        assertEquals(25, pencil.getDurability());
     }
 
     @Test
     public void EditingOverTextWithCollision() {
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "onion b");
-        assertEquals(24, pencil.getPencilDurability());
+        assertEquals(24, pencil.getDurability());
         assertEquals("An onion @ day keeps the doctor away", paper);
     }
 
@@ -175,7 +175,7 @@ public class PencilWriteTest {
     public void EditingOverTextWithMultipleCollisions() {
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "artichoke");
-        assertEquals(21, pencil.getPencilDurability());
+        assertEquals(21, pencil.getDurability());
         assertEquals("An artich@k@ay keeps the doctor away", paper);
     }
 
@@ -184,7 +184,7 @@ public class PencilWriteTest {
         pencil = new Pencil(3, 1 , 3);
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "apple");
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
         assertEquals("An app   a day keeps the doctor away", paper);
     }
 
@@ -193,7 +193,7 @@ public class PencilWriteTest {
         pencil = new Pencil(5, 1 , 3);
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "apPle");
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
         assertEquals("An apPl  a day keeps the doctor away", paper);
     }
 
@@ -202,7 +202,7 @@ public class PencilWriteTest {
         pencil = new Pencil(3, 1 , 3);
         paper = "An       a day keeps the doctor away";
         paper = pencil.edit(paper, 3 , "apPle");
-        assertEquals(0, pencil.getPencilDurability());
+        assertEquals(0, pencil.getDurability());
         assertEquals("An ap~   a day keeps the doctor away", paper);
     }
 
