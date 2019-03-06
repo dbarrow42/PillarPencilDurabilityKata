@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c8979b-5032-4de8-bc48-6012df6015fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/IDurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Eraser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/barrow/PencilDurability/Pencil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/barrow/PencilDurability/Pencil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PencilWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PencilWriteTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="204" selection-start-line="204" selection-end-line="204" />
+            <state relative-caret-position="426">
+              <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,15 +30,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
+            <state relative-caret-position="391">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="e#629#630#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#733#734#0" expanded="true" />
                 <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
                 <element signature="e#781#782#0" expanded="true" />
                 <element signature="e#815#816#0" expanded="true" />
               </folding>
@@ -51,10 +47,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Eraser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="e#110#111#0" expanded="true" />
+                <element signature="e#134#135#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/IDurable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -73,8 +86,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,6 +106,7 @@
         <option value="$PROJECT_DIR$/DevNotes.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/IDurable.java" />
         <option value="$PROJECT_DIR$/src/test/java/PencilWriteTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Eraser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java" />
       </list>
     </option>
@@ -270,9 +284,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest - 2019.03.04 at 23h 18m 48s.xml">
-      <configuration name="PencilWriteTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest_EditsWithUppercaseUseMoreDurability - 2019.03.04 at 23h 19m 19s.xml">
       <configuration name="PencilWriteTest.EditsWithUppercaseUseMoreDurability" configurationId="JUnit" />
     </history-entry>
@@ -300,18 +311,21 @@
     <history-entry file="PencilWriteTest - 2019.03.05 at 19h 41m 19s.xml">
       <configuration name="PencilWriteTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.05 at 19h 43m 30s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32887402" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32887402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,32 +365,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/IDurable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        <state relative-caret-position="426">
+          <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Eraser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
+        <state relative-caret-position="391">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="e#629#630#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
             <element signature="e#733#734#0" expanded="true" />
             <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
             <element signature="e#781#782#0" expanded="true" />
             <element signature="e#815#816#0" expanded="true" />
           </folding>

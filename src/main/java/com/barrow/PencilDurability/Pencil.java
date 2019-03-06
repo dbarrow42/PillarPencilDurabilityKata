@@ -9,13 +9,13 @@ public class Pencil implements IDurable {
     private int durability;
     private int initialDurability;
     private int length;
-    private int eraserDurability;
+    private Eraser eraser;
 
     public Pencil(int durability, int length, int eraserDurability) {
         this.durability = durability;
         this.initialDurability = durability;
         this.length = length;
-        this.eraserDurability = eraserDurability;
+        this.eraser = new Eraser(eraserDurability);
     }
 
     public int getDurability() {
@@ -27,7 +27,7 @@ public class Pencil implements IDurable {
     }
 
     public int getEraserDurability() {
-        return this.eraserDurability;
+        return this.eraser.getDurability();
     }
 
     public int getLength() {
@@ -62,20 +62,7 @@ public class Pencil implements IDurable {
     }
 
     public String erase(String paper, String textToErase) {
-        int location = paper.lastIndexOf(textToErase);
-        if (location > -1) {
-            int position = location + textToErase.length() - 1;
-            StringBuilder sb = new StringBuilder(paper);
-            while (this.eraserDurability > 0 && position >= location) {
-                if (!Character.isWhitespace(paper.charAt(position))) {
-                    sb.setCharAt(position, ' ');
-                    this.eraserDurability--;
-                }
-                position--;
-            }
-            paper = sb.toString();
-        }
-        return paper;
+        return this.eraser.erase(paper, textToErase);
 
     }
 
