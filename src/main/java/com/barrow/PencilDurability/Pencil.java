@@ -25,6 +25,7 @@ public class Pencil implements IDurable {
 
     public void reduceDurability(int amount) {
         this.durability -= amount;
+        if(this.durability < 0) this.durability = 0;
     }
 
     public int getEraserDurability() {
@@ -75,19 +76,15 @@ public class Pencil implements IDurable {
             char currentCharToBeWritten = textToWrite.charAt(textIndex);
             if (currentPaperChar != currentCharToBeWritten) {
                 if (!Character.isWhitespace(currentPaperChar)) {
-                    sb.setCharAt(position, this.EDITING_COLLISION_CHAR);
-                    this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
-                } else if (!Character.isLowerCase(currentCharToBeWritten)){
+                    currentCharToBeWritten = this.EDITING_COLLISION_CHAR;
+                } else if (!Character.isLowerCase(currentCharToBeWritten)) {
                     if (this.durability - this.UPPERCASE_DEGRADATION_VALUE < 0) {
                         currentCharToBeWritten = this.PARTIAL_UPPERCASE_INDICATOR;
-                        this.durability = this.UPPERCASE_DEGRADATION_VALUE; // durability will be zero after next two statements
                     }
-                    sb.setCharAt(position, currentCharToBeWritten);
-                    this.reduceDurability(this.UPPERCASE_DEGRADATION_VALUE);
-                } else {
-                    sb.setCharAt(position, currentCharToBeWritten);
-                    this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
+                    this.reduceDurability(this.UPPERCASE_DEGRADATION_VALUE - this.LOWERCASE_DEGRADATION_VALUE);
                 }
+                sb.setCharAt(position, currentCharToBeWritten);
+                this.reduceDurability(this.LOWERCASE_DEGRADATION_VALUE);
             }
             position++;
             textIndex++;

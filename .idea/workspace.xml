@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="238">
+              <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,13 +29,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            <state relative-caret-position="320">
+              <caret line="83" column="111" selection-start-line="83" selection-start-column="111" selection-end-line="83" selection-end-column="111" />
               <folding>
                 <element signature="e#629#630#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
                 <element signature="e#805#806#0" expanded="true" />
                 <element signature="e#826#827#0" expanded="true" />
                 <element signature="e#781#782#0" expanded="true" />
@@ -248,9 +246,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PencilWriteTest" />
+        <item itemvalue="JUnit.PencilWriteTest.EditsWithUppercaseUseMoreDurability" />
         <item itemvalue="JUnit.PencilWriteTest.CheckException" />
         <item itemvalue="JUnit.PencilWriteTest.EditsWithUppercaseWhenInsufficientDurability" />
-        <item itemvalue="JUnit.PencilWriteTest.EditsWithUppercaseUseMoreDurability" />
         <item itemvalue="JUnit.PencilWriteTest.EditsOnlyMadeWhenPencilHasRemainingDurability" />
       </list>
     </recent_temporary>
@@ -266,18 +264,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilWriteTest_EditsWithUppercaseUseMoreDurability - 2019.03.04 at 23h 19m 50s.xml">
-      <configuration name="PencilWriteTest.EditsWithUppercaseUseMoreDurability" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EditsWithUppercaseWhenInsufficientDurability - 2019.03.04 at 23h 20m 34s.xml">
-      <configuration name="PencilWriteTest.EditsWithUppercaseWhenInsufficientDurability" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest_EditsWithUppercaseWhenInsufficientDurability - 2019.03.04 at 23h 20m 51s.xml">
-      <configuration name="PencilWriteTest.EditsWithUppercaseWhenInsufficientDurability" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PencilWriteTest - 2019.03.04 at 23h 20m 56s.xml">
-      <configuration name="PencilWriteTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilWriteTest - 2019.03.04 at 23h 49m 18s.xml">
       <configuration name="PencilWriteTest" configurationId="JUnit" />
     </history-entry>
@@ -296,6 +282,18 @@
     <history-entry file="PencilWriteTest - 2019.03.05 at 19h 54m 16s.xml">
       <configuration name="PencilWriteTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.05 at 19h 55m 16s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.05 at 20h 04m 33s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest_EditsWithUppercaseUseMoreDurability - 2019.03.05 at 20h 06m 49s.xml">
+      <configuration name="PencilWriteTest.EditsWithUppercaseUseMoreDurability" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilWriteTest - 2019.03.05 at 20h 08m 22s.xml">
+      <configuration name="PencilWriteTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -308,7 +306,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32887402" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -369,8 +367,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PencilWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="238">
+          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -379,13 +377,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/barrow/PencilDurability/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        <state relative-caret-position="320">
+          <caret line="83" column="111" selection-start-line="83" selection-start-column="111" selection-end-line="83" selection-end-column="111" />
           <folding>
             <element signature="e#629#630#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="e#781#782#0" expanded="true" />
